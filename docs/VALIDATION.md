@@ -1,0 +1,15 @@
+# Validation and boundaries
+
+Application/SDK 0.1.0 and private kernel candidate 0.1.0.0 target Windows x64. The final candidate passed isolated Windows 10 x64 build 19045 normal and targeted Driver Verifier campaigns. Microsoft signing is pending; the public preview contains no installable kernel package.
+
+Completed local checks: MSVC W4/WX user-mode and kernel compilation; kernel PREfast XML zero defects; InfVerif Windows/Universal checks; catalog generation; 100,003 bounded policy assertions in normal and separate AddressSanitizer configurations. No driver, certificate or network policy was installed on the development host.
+
+The final native runtime completed 960 checks normally and 919 with standard Driver Verifier targeted to the candidate drivers; the check count includes variable-duration fixture coordination. The owned loopback UDP fixture verified unchanged payloads, every-third deterministic loss, a configured 40 ms delay with actual clone/injection counters, the 128-packet bound under a 512-datagram burst, socket closure while queued, permission expiry restoring pass-through and abrupt owner exit. The single delay observations were approximately 47.0 ms normally and 45.6 ms under Verifier; these are functional boundary checks, not a latency benchmark or scheduling guarantee.
+
+Both campaigns installed byte-identified guest-only test-signed copies of the same final unsigned image, exercised restricted-token denial, insufficient handle-access denial and exclusive-owner denial, then removed the exact packages and unloaded their services. No new dump was observed. The VM was restored to its original powered-off baseline and its nine historical checkpoints were retained. The submission CAB was made from the qualified original files without recompilation and its INF/SYS/CAT/PDB payload was extracted and byte-verified. No lab certificate or test-signed image is included.
+
+Kernel classification never waits on a user application. The only worker waits for a queue event or earliest packet/permission deadline; it does not spin or periodically poll while idle. At most 64 flow contexts and 128 retained single-buffer packets (reservations, queue and in-flight injections combined) are retained. Unsupported traffic and allocation pressure pass through. Original NBL storage is referenced until the cloned reinjection completes. Teardown removes associated flow contexts, unregisters callouts, drains queued work and waits for outstanding injections before releasing lifetime state.
+
+The UDP callback's boundary does not establish physical network latency, game end-to-end delay, throughput, perfect timing, universal compatibility or absence of defects. Production qualification must cover Windows 11, Secure Boot/HVCI, representative NICs, IPv4 offloads, concurrent security/WFP products, suspend/resume and prolonged pressure. TCP/IPv6 and arbitrary global traffic shaping are not part of this version.
+
+Private kernel source, signing keys, lab certificates and VM runtime probes are excluded from public releases. The final CAB is frozen only after actual final-image runtime evidence.
