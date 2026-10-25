@@ -1,4 +1,4 @@
-# Network Emulation SDK - Windows Kernel UDP Network Emulator
+# Network Emulation SDK - Microsoft-signed Windows Kernel UDP Network Emulator
 
 **Reproduce outbound UDP loss and delay for one selected Windows process and endpoint.**
 
@@ -6,7 +6,7 @@ A private KMDF/WFP callout operates in the Windows datagram path. The native C++
 
 ![Policy and packet path](docs/overview.svg)
 
-**Engineering preview for Windows x64.** This release contains the app, CLI, SDK, examples and installer sources. The kernel driver is submitted separately for Microsoft signing; the preview ZIP contains no installable unsigned driver or test certificate. A future signed bundle will include self-contained UI and console installers. The offline preview is labelled and never opens a driver.
+**Microsoft-signed evaluation for Windows x64.** The complete 0.1.1 release contains the app, CLI, SDK, example, installer sources and self-contained UI/console installers with the signed 0.1.0.0 driver. Actual signed installation, UDP tests and full removal passed on Windows 10 x64 normally and under targeted Driver Verifier, with test-signing disabled. The labelled offline preview remains available without opening a driver.
 
 ## Scope
 
@@ -27,8 +27,8 @@ Closing the owner or allowing its permission to expire restores pass-through. Al
 
 ## Run
 
-1. Download and extract the complete [release ZIP](https://github.com/titanfyre/Network-Emulation-SDK/releases).
-2. For the present unsigned preview, open `NetworkEmulation.exe --preview` for the offline editor. Live operation requires the separately signed driver bundle once available; do not enable test-signing on a production PC.
+1. Download and extract the complete [release ZIP](https://github.com/titanfyre/Network-Emulation-SDK/releases/tag/v0.1.1).
+2. Open `NetworkEmulation.exe --preview` for the offline editor, or request a Network Emulation SDK access key from **`titancsa` on Discord** for live operation. The signed bundle does not require test-signing.
 3. With a signed bundle, run `NetworkEmulationSetup.exe`, choose **Install / reinstall**, and restart only if requested. Console deployment uses `/install` and `/uninstall`; exit code `3010` requests a manual restart. Setup verifies exact product identity and Microsoft-root catalog plus INF/SYS membership; it never restarts automatically.
 4. Open the application as administrator, enter your product access key, select an authorized target PID and numeric IPv4/UDP destination, then choose **Authorize & start**. Create the application's new UDP socket afterwards.
 5. **Stop** or close the app to release the policy. Test only software and traffic you own or are authorized to administer.
@@ -76,7 +76,7 @@ Use Visual Studio 2022 Desktop C++, CMake and Windows SDK on x64:
 ```powershell
 .\Build.ps1
 .\Build.ps1 -Asan
-# Future: embed your received opaque signed package.
+# Embed an independently supplied opaque signed package when rebuilding setup.
 .\Build.ps1 -DriverPackageDirectory C:\Signed\TitanNetworkEmulation
 ```
 
