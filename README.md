@@ -78,9 +78,15 @@ Add **`titancsa` on Discord** for evaluation access, an OEM integration pilot, r
 
 Product-specific keys request ECDSA P-256 per-handle permissions from the shared administration. Permissions last at most one hour and can be explicitly renewed while the key is enabled. Revocation prevents future grants; it does not instantly cancel accepted permissions. There is no TPM, machine fingerprint, automatic payment collection or per-machine seat enforcement. No cryptography or HTTPS runs for each datagram.
 
-Public app/SDK/example/installer source is MIT licensed. The private driver binary has separate evaluation and OEM terms. Microsoft signing alone is not WHQL certification or evidence of universal reliability. See [validation](docs/VALIDATION.md).
+Public app/SDK/example/installer source is MIT licensed. The prebuilt driver binary has separate evaluation and OEM terms. Microsoft signing alone is not WHQL certification or evidence of universal reliability. See [validation](docs/VALIDATION.md).
 
 ## Build
+
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
 
 Use Visual Studio 2022 Desktop C++, CMake and Windows SDK on x64:
 
