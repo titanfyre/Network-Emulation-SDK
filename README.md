@@ -13,7 +13,7 @@
 > Tell me whether you need personal use, business integration or OEM redistribution, and ask for pricing and license / activation instructions.
 <!-- full-version-contact:end -->
 
-A private KMDF/WFP callout operates in the Windows datagram path. The native C++ app and compact SDK configure deterministic packet loss, a bounded delay and cyclic jitter without a proxy or changes to the application's payload.
+A KMDF/WFP callout operates in the Windows datagram path. The native C++ app and compact SDK configure deterministic packet loss, a bounded delay and cyclic jitter without a proxy or changes to the application's payload.
 
 ![Policy and packet path](docs/overview.svg)
 
@@ -97,6 +97,6 @@ Use Visual Studio 2022 Desktop C++, CMake and Windows SDK on x64:
 .\Build.ps1 -DriverPackageDirectory C:\Signed\TitanNetworkEmulation
 ```
 
-Outputs are under `obj/Build/bin/Release`. Public builds do not need a WDK or private kernel source. They never install a driver or change a network policy. Unsigned/test-signed packages are refused by setup.
+Outputs are under `obj/Build/bin/Release`. Public builds do not need a WDK or driver source. They never install a driver or change a network policy. Unsigned/test-signed packages are refused by setup.
 
 Use only for lawful diagnostics and integration on authorized systems. You are responsible for your deployment and use; the software is supplied without warranty, subject to applicable licenses and mandatory statutory rights. No unlawful or unauthorized use is endorsed.
