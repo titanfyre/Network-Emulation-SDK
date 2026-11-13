@@ -1,8 +1,6 @@
 # Network-Emulation-SDK .NET8 SDK
 
-Package ID `NetworkEmulationSDK.SDK`. NuGet upload remains on hold at owner request.
-
-```csharp
+Package ID `NetworkEmulationSDK.SDK`. ```csharp
 using var client=new TitanCSA.Products.NetworkEmulationSDK.Client();
 string statusJson=client.Call("status", "{}");
 ```
