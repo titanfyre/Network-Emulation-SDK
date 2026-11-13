@@ -11,7 +11,7 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Python/pypi | built_fixture_and_production_verified | network-emulation-sdk [Source](Network-Emulation-SDK-Python-pypi/) |
 | Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [network-emulation-sdk](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [network-emulation-sdk](https://crates.io/crates/network-emulation-sdk) [Source](Network-Emulation-SDK-Rust-cargo/) |
-| JavaScript/npm | awaiting_browser_publication_authentication | [network-emulation-sdk](https://www.npmjs.com/package/network-emulation-sdk) [Source](Network-Emulation-SDK-JavaScript-npm/) |
+| JavaScript/npm | registry_publication_requires_action | [network-emulation-sdk](https://www.npmjs.com/package/network-emulation-sdk) [Source](Network-Emulation-SDK-JavaScript-npm/) |
 | Java/maven | published_install_verified | [network-emulation-sdk](https://central.sonatype.com/artifact/io.github.titancsa/network-emulation-sdk/1.0.0) [Source](Network-Emulation-SDK-Java-maven/) |
 | Java/jitpack | published_install_verified | [network-emulation-sdk](https://jitpack.io/#titanfyre/Network-Emulation-SDK/java-sdk-v1.0.0) [Source](Network-Emulation-SDK-Java-maven/) |
 | Go/modules | published_install_verified | [network-emulation-sdk](https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0) [Source](Network-Emulation-SDK-Go-modules/) |
