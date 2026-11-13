@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=77","wheel>=0.43"]
+build-backend="setuptools.build_meta"
+[project]
+name="network-emulation-sdk"
+version="1.0.0"
+description="Windows x64 Network-Emulation-SDK direct SDK"
+requires-python=">=3.10"
+license="MIT"
+readme="README.md"
+[project.urls]
+Repository="https://github.com/titanfyre/Network-Emulation-SDK"
+[tool.setuptools]
+packages=["network_emulation_sdk"]
+[tool.setuptools.package-data]
+network_emulation_sdk=["*.dll"]
+[tool.setuptools.data-files]
+"share/network-emulation-sdk/docs"=["docs/*","LICENSE"]
