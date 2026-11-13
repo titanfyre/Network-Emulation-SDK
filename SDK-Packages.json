@@ -68,6 +68,14 @@
       "distribution": "Documented native SDK; registry receipt tracked independently"
     },
     {
+      "directory": "Network-Emulation-SDK-JavaScript-npm",
+      "language": "JavaScript",
+      "registry": "npm",
+      "name": "network-emulation-sdk",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
       "directory": "Network-Emulation-SDK-NET-nuget",
       "language": "NET",
       "registry": "nuget",
