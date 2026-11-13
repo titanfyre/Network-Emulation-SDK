@@ -5,21 +5,21 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Target | Status | Package / documentation |
 | --- | --- | --- |
 | CPP/vcpkg | published_custom_registry | network-emulation-sdk |
-| CPP/conan | public_recipe_builds_locally |  |
+| CPP/conan | public_recipe_builds_locally |  [Source](packaging/native/) |
 | CPP/nuget | paused_pending_owner_email_confirmation | Network-Emulation-SDK.Native |
-| NET/nuget | binding_not_implemented |  |
-| Python/pypi | binding_not_implemented |  |
-| Python/conda-forge | binding_not_implemented |  |
-| Rust/cargo | binding_not_implemented |  |
-| JavaScript/npm | binding_not_implemented |  |
-| Java/maven | binding_not_implemented |  |
-| Java/jitpack | binding_not_implemented |  |
-| Go/modules | binding_not_implemented |  |
-| Go/pkg-go-dev | binding_not_implemented |  |
-| PowerShell/gallery | binding_not_implemented |  |
-| Dart/pub-dev | binding_not_implemented |  |
-| Ruby/rubygems | binding_not_implemented |  |
-| PHP/packagist | binding_not_implemented |  |
+| NET/nuget | built_verified_publication_on_hold_by_owner | NetworkEmulationSDK.SDK [Source](Network-Emulation-SDK-NET-nuget/) |
+| Python/pypi | built_fixture_and_production_verified | network-emulation-sdk [Source](Network-Emulation-SDK-Python-pypi/) |
+| Python/conda-forge | built_tested_requires_source_publication_and_official_review | network-emulation-sdk [Source](packaging/conda/) |
+| Rust/cargo | published_install_verified | [network-emulation-sdk](https://crates.io/crates/network-emulation-sdk) [Source](Network-Emulation-SDK-Rust-cargo/) |
+| JavaScript/npm | awaiting_browser_publication_authentication | [network-emulation-sdk](https://www.npmjs.com/package/network-emulation-sdk) [Source](Network-Emulation-SDK-JavaScript-npm/) |
+| Java/maven | published_install_verified | [network-emulation-sdk](https://central.sonatype.com/artifact/io.github.titancsa/network-emulation-sdk/1.0.0) [Source](Network-Emulation-SDK-Java-maven/) |
+| Java/jitpack | published_install_verified | [network-emulation-sdk](https://jitpack.io/#titanfyre/Network-Emulation-SDK/java-sdk-v1.0.0) [Source](Network-Emulation-SDK-Java-maven/) |
+| Go/modules | published_install_verified | [network-emulation-sdk](https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0) [Source](Network-Emulation-SDK-Go-modules/) |
+| Go/pkg-go-dev | indexed_verified | [Documentation](https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0) |
+| PowerShell/gallery | published_install_verified | [NetworkEmulationSDK](https://www.powershellgallery.com/packages/NetworkEmulationSDK/1.0.0) [Source](Network-Emulation-SDK-PowerShell-gallery/) |
+| Dart/pub-dev | built_fixture_and_production_verified | network_emulation_sdk [Source](Network-Emulation-SDK-Dart-pub-dev/) |
+| Ruby/rubygems | published_install_verified | [network-emulation-sdk](https://rubygems.org/gems/network-emulation-sdk) [Source](Network-Emulation-SDK-Ruby-rubygems/) |
+| PHP/packagist | composer_source_and_tag_published | [titancsa/network-emulation-sdk](https://packagist.org/packages/titancsa/network-emulation-sdk) |
 
 Native SDK source and CMake/Conan/vcpkg/NuGet recipes share [`packaging/native`](packaging/native/LAYOUT.md). Previous release archives and tags remain unchanged.
 
