@@ -239,13 +239,13 @@
       "api_prefix": "network_emulation_sdk_json_"
     },
     "Dart/pub-dev": {
-      "status": "built_fixture_and_production_verified",
+      "status": "registry_rate_limited_retry_later",
       "name": "network_emulation_sdk",
       "version": "1.0.0",
       "directory": "Network-Emulation-SDK-Dart-pub-dev",
       "registry_published": false,
       "documentation_bundled": true,
-      "url": null,
+      "url": "https://pub.dev/packages/network_emulation_sdk",
       "public_consumer_verified": false,
       "module": "network_emulation_sdk",
       "dll_name": "NetworkEmulationSDKJsonSDK.dll",
