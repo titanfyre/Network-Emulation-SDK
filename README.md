@@ -2,17 +2,6 @@
 
 **Reproduce outbound UDP loss and delay for one selected Windows process and endpoint.**
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Get the full version without demo restrictions**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Ask for the **full version without the demo time limit**, and mention **Network Emulation SDK**.
->
-> Tell me whether you need personal use, business integration or OEM redistribution, and ask for pricing and license / activation instructions.
-<!-- full-version-contact:end -->
-
 A KMDF/WFP callout operates in the Windows datagram path. The native C++ app and compact SDK configure deterministic packet loss, a bounded delay and cyclic jitter without a proxy or changes to the application's payload.
 
 ![Policy and packet path](docs/overview.svg)
@@ -129,3 +118,16 @@ Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide compl
 
 Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
 <!-- central-sdk-packages:end -->
+
+## Commercial integration and support
+
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Get the full version without demo restrictions**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Ask for the **full version without the demo time limit**, and mention **Network Emulation SDK**.
+>
+> Tell me whether you need personal use, business integration or OEM redistribution, and ask for pricing and license / activation instructions.
+<!-- full-version-contact:end -->
