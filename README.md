@@ -101,18 +101,18 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | Conan | `network-emulation-sdk` | `conan install --requires=network-emulation-sdk/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
 | NuGet | `Network-Emulation-SDK.Native` | `Install-Package Network-Emulation-SDK.Native -Version 0.1.1` |
 | NuGet | `NetworkEmulationSDK.SDK` | `dotnet add package NetworkEmulationSDK.SDK --version 1.0.0` |
-| PyPI | `network_emulation_sdk` | Commande prevue apres publication : `python -m pip install network-emulation-sdk==1.0.0` |
+| PyPI | `network-emulation-sdk` | Commande prevue apres publication : `python -m pip install network-emulation-sdk==1.0.0` |
 | Conda | `network-emulation-sdk` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge network-emulation-sdk` (canal TitanCSA) |
-| crates.io | `network_emulation_sdk` | `cargo add network-emulation-sdk@1.0.0` |
-| npm | `network_emulation_sdk` | Commande prevue apres publication : `npm install network-emulation-sdk@1.0.0` |
+| crates.io | `network-emulation-sdk` | `cargo add network-emulation-sdk@1.0.0` |
+| npm | `network-emulation-sdk` | Commande prevue apres publication : `npm install network-emulation-sdk@1.0.0` |
 | Maven Central | `io.github.titancsa:network-emulation-sdk` | `io.github.titancsa:network-emulation-sdk:1.0.0 (pom.xml / Gradle)` |
 | JitPack | `com.github.titanfyre:Network-Emulation-SDK` | `com.github.titanfyre:Network-Emulation-SDK:java-sdk-v1.0.0 (avec le depot JitPack)` |
 | Go Modules | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `go get github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
 | pkg.go.dev | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
-| PowerShell Gallery | `network_emulation_sdk` | `Install-Module NetworkEmulationSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| PowerShell Gallery | `NetworkEmulationSDK` | `Install-Module NetworkEmulationSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
 | pub.dev | `network_emulation_sdk` | Commande prevue apres publication : `dart pub add network_emulation_sdk:1.0.0` |
-| RubyGems | `network_emulation_sdk` | `gem install network-emulation-sdk -v 1.0.0` |
-| Packagist | `network_emulation_sdk` | Commande prevue apres publication : `composer require titancsa/network-emulation-sdk:1.0.0` |
+| RubyGems | `network-emulation-sdk` | `gem install network-emulation-sdk -v 1.0.0` |
+| Packagist | `titancsa/network-emulation-sdk` | Commande prevue apres publication : `composer require titancsa/network-emulation-sdk:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Network-Emulation-SDK/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
