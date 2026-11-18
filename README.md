@@ -112,7 +112,7 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | PowerShell Gallery | `NetworkEmulationSDK` | `Install-Module NetworkEmulationSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
 | pub.dev | `network_emulation_sdk` | Commande prevue apres publication : `dart pub add network_emulation_sdk:1.0.0` |
 | RubyGems | `network-emulation-sdk` | `gem install network-emulation-sdk -v 1.0.0` |
-| Packagist | `titancsa/network-emulation-sdk` | Commande prevue apres publication : `composer require titancsa/network-emulation-sdk:1.0.0` |
+| Packagist | `titancsa/network-emulation-sdk` | `composer require titancsa/network-emulation-sdk:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Network-Emulation-SDK/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
