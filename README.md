@@ -110,7 +110,7 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | Go Modules | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `go get github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
 | pkg.go.dev | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
 | PowerShell Gallery | `NetworkEmulationSDK` | `Install-Module NetworkEmulationSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `network_emulation_sdk` | Commande prevue apres publication : `dart pub add network_emulation_sdk:1.0.0` |
+| pub.dev | `network_emulation_sdk` | `dart pub add network_emulation_sdk:1.0.0` |
 | RubyGems | `network-emulation-sdk` | `gem install network-emulation-sdk -v 1.0.0` |
 | Packagist | `titancsa/network-emulation-sdk` | `composer require titancsa/network-emulation-sdk:1.0.0` |
 
