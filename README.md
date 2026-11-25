@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Test how your app handles delays or lost messages on a UDP network.
 
-**Start here.** Start with a UDP test app you control and follow the lab example.
+[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Start with a UDP test app you control and follow the lab example.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
@@ -104,32 +108,11 @@ Outputs are under `obj/Build/bin/Release`. Public builds do not need a WDK or dr
 Use only for lawful diagnostics and integration on authorized systems. You are responsible for your deployment and use; the software is supplied without warranty, subject to applicable licenses and mandatory statutory rights. No unlawful or unauthorized use is endorsed.
 
 <!-- central-sdk-packages:start -->
-## Paquets et installation
+<a name="paquets-et-installation"></a>
 
-Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Network-Emulation-SDK). Choisis le paquet a installer puis execute sa commande dans son dossier.
+## SDK and packages
 
-| Registre | Paquet | Installation / utilisation |
-| --- | --- | --- |
-| vcpkg | `network-emulation-sdk` | `vcpkg install network-emulation-sdk:x64-windows` |
-| Conan | `network-emulation-sdk` | `conan install --requires=network-emulation-sdk/0.1.1 -r titancsa --build=missing -s compiler.cppstd=17` |
-| NuGet | `Network-Emulation-SDK.Native` | `Install-Package Network-Emulation-SDK.Native -Version 0.1.1` |
-| NuGet | `NetworkEmulationSDK.SDK` | `dotnet add package NetworkEmulationSDK.SDK --version 1.0.0` |
-| PyPI | `network-emulation-sdk` | Commande prevue apres publication : `python -m pip install network-emulation-sdk==1.0.0` |
-| Conda | `network-emulation-sdk` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge network-emulation-sdk` (canal TitanCSA) |
-| crates.io | `network-emulation-sdk` | `cargo add network-emulation-sdk@1.0.0` |
-| npm | `network-emulation-sdk` | Commande prevue apres publication : `npm install network-emulation-sdk@1.0.0` |
-| Maven Central | `io.github.titancsa:network-emulation-sdk` | `io.github.titancsa:network-emulation-sdk:1.0.0 (pom.xml / Gradle)` |
-| JitPack | `com.github.titanfyre:Network-Emulation-SDK` | `com.github.titanfyre:Network-Emulation-SDK:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go Modules | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `go get github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
-| pkg.go.dev | `github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Network-Emulation-SDK/Network-Emulation-SDK-Go-modules@v1.0.0` |
-| PowerShell Gallery | `NetworkEmulationSDK` | `Install-Module NetworkEmulationSDK -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `network_emulation_sdk` | `dart pub add network_emulation_sdk:1.0.0` |
-| RubyGems | `network-emulation-sdk` | `gem install network-emulation-sdk -v 1.0.0` |
-| Packagist | `titancsa/network-emulation-sdk` | `composer require titancsa/network-emulation-sdk:1.0.0` |
-
-Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Network-Emulation-SDK/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
-
-Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
+Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Network-Emulation-SDK#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
